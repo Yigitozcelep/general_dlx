@@ -2,7 +2,7 @@ class Node:
     def __init__(self, id, parent, answer): self.up, self.right, self.down, self.left, self.parent, self.name, self.id, self.answer = None, None, None, None, parent, "n", id, answer
 
 class Header:
-    def __init__(self, id): self.up, self.right, self.down, self.left, self.total_1, self.name, self.id, self.parent = None, None, None, None, 0, "h", id, self
+    def __init__(self, id): self.up, self.right, self.down, self.left, self.total_1, self.name, self.id, self.parent = self, self, self, self, 0, "h", id, self
 
 def create_nodes(ids, header_list, copy_list, answer):
     parents = [header_list[id] for id in ids]
